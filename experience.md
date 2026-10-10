@@ -6,7 +6,6 @@ description: Engineering, automotive, construction, laboratory, and operations e
 ---
 
 <section class="page-hero shell">
-  <p class="eyebrow">Flight log</p>
   <h1>Experience across engineering and operations.</h1>
   <p>Hands-on technical work, project coordination, laboratory support, and team leadership across automotive, construction, and university environments.</p>
 </section>
@@ -68,7 +67,7 @@ description: Engineering, automotive, construction, laboratory, and operations e
       <p>Minor in Aerospace Engineering // Polytechnic University of Puerto Rico // Expected May 2028</p>
     </div>
     <div class="tool-stack" aria-label="Technical tools">
-      <span>SolidWorks</span><span>ANSYS</span><span>CREO</span><span>MATLAB</span>
+      <span data-tool="solidworks">SolidWorks</span><span data-tool="ansys">ANSYS</span><span data-tool="creo">CREO</span><span data-tool="matlab">MATLAB</span>
     </div>
   </div>
 </section>
