@@ -86,10 +86,13 @@
         </figure>
         <figure class="pure-shot pure-shot-feature pure-video-shot">
           <div class="pure-shot-media">
-            <video controls preload="metadata" playsinline aria-label="Battle Bot completed-build demonstration">
-              <source src="{{ '/assets/videos/battle-bot-demonstration.mp4' | relative_url }}" type="video/mp4">
-              Your browser does not support embedded video playback.
-            </video>
+            <div class="video-frame">
+              <video controls preload="metadata" playsinline aria-label="Battle Bot completed-build demonstration">
+                <source src="{{ '/assets/videos/battle-bot-demonstration.mp4' | relative_url }}" type="video/mp4">
+                Your browser does not support embedded video playback.
+              </video>
+              <button class="video-play-button" type="button" aria-label="Play Battle Bot completed-build demonstration"><span aria-hidden="true"></span><strong>Play video</strong></button>
+            </div>
           </div>
           <figcaption><span>ASM 05 // BUILD VIDEO</span>Completed Battle Bot demonstration documenting the assembled system in operation.</figcaption>
         </figure>
