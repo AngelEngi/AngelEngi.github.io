@@ -7,7 +7,7 @@ description: Mechanical engineering student and aerospace engineering minor focu
 <section class="hero shell">
   <div class="hero-copy">
     <p class="eyebrow"><span>Mission profile</span> Mechanical + Aerospace Engineering</p>
-    <h1 class="visually-hidden">Angel G. Lugo Rodriguez mechanical and aerospace engineering portfolio</h1>
+    <h1 class="visually-hidden">Angel G. Lugo Rodriguez engineering portfolio</h1>
     <figure class="hero-headshot">
       <img src="{{ '/assets/images/professional-photo.jpeg' | relative_url }}" alt="Professional headshot of Angel G. Lugo Rodriguez" width="400" height="400">
     </figure>
