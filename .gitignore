@@ -1,0 +1,8 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+.tmp/
+vendor/
+Gemfile.lock
+resume-source.docx
+

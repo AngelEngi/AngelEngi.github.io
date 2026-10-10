@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafaf7">
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <link rel="icon" href="{{ '/assets/images/mission-mark.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="space-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Angel Lugo Rodriguez home">
+        <img src="{{ '/assets/images/mission-mark.svg' | relative_url }}" alt="" width="36" height="36">
+        <span><strong>ALR</strong></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
+        <a href="{{ '/projects/' | relative_url }}"{% if page.url contains '/projects' %} aria-current="page"{% endif %}>Projects</a>
+        <a href="{{ '/experience/' | relative_url }}"{% if page.url contains '/experience' %} aria-current="page"{% endif %}>Experience</a>
+        <a class="nav-contact" href="mailto:lugorodriguezangel097@gmail.com">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <img src="{{ '/assets/images/mission-mark.svg' | relative_url }}" alt="" width="28" height="28">
+        <span>Designed and built by Angel G. Lugo Rodriguez</span>
+      </div>
+      <p>Mechanical engineering // Aerospace systems // Puerto Rico</p>
+    </footer>
+  </body>
+</html>
+

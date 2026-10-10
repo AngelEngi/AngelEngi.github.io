@@ -1,0 +1,18 @@
+title: Angel G. Lugo Rodriguez
+description: Mechanical engineering student and aerospace engineering minor building practical, performance-driven systems.
+url: ""
+baseurl: ""
+lang: en-US
+timezone: America/Puerto_Rico
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - resume-source.docx
+  - .tmp
+  - vendor
+
