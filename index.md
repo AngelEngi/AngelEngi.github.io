@@ -6,7 +6,7 @@ description: Mechanical engineering student and aerospace engineering minor focu
 
 <section class="hero shell">
   <div class="hero-copy">
-    <p class="eyebrow"><span>Mission profile</span> Mechanical + Aerospace Engineering</p>
+    <p class="eyebrow">Mechanical + Aerospace Engineering</p>
     <h1 class="visually-hidden">Angel G. Lugo Rodriguez engineering portfolio</h1>
     <figure class="hero-headshot">
       <img src="{{ '/assets/images/professional-photo.jpeg' | relative_url }}" alt="Professional headshot of Angel G. Lugo Rodriguez" width="400" height="400">
@@ -39,20 +39,17 @@ description: Mechanical engineering student and aerospace engineering minor focu
             <path id="orbit-path" d="M60 270A260 165 0 1 0 580 270A260 165 0 1 0 60 270Z"/>
           </defs>
           <rect width="640" height="540" fill="url(#minor-grid)"/>
-          <g class="axes" aria-hidden="true">
-            <path d="M42 270H598M320 35V505"/>
-            <path d="M313 65h14M313 475h14M115 263v14M525 263v14"/>
-            <text x="320" y="29">N</text><text x="320" y="526">S</text><text x="27" y="274">W</text><text x="609" y="274">E</text>
-          </g>
           <g class="earth" aria-hidden="true">
             <circle cx="320" cy="270" r="142"/>
-            <ellipse cx="320" cy="270" rx="142" ry="49"/>
-            <ellipse cx="320" cy="270" rx="142" ry="101"/>
-            <ellipse cx="320" cy="270" rx="55" ry="142"/>
-            <ellipse cx="320" cy="270" rx="104" ry="142"/>
-            <path d="M184 248C219 224 251 225 274 198C286 184 278 164 301 150C332 141 356 157 378 169C397 180 416 173 445 190C468 210 462 231 482 249"/>
-            <path d="M231 291C260 274 286 281 298 303C308 320 302 342 317 359C326 372 338 386 333 405M362 263C388 252 414 258 443 282C455 300 443 320 425 329C409 337 404 355 392 371"/>
-            <path d="M198 270H462M320 128V412" opacity=".35"/>
+            <g clip-path="url(#earth-clip)">
+              <ellipse cx="320" cy="270" rx="142" ry="49"/>
+              <ellipse cx="320" cy="270" rx="142" ry="101"/>
+              <ellipse cx="320" cy="270" rx="55" ry="142"/>
+              <ellipse cx="320" cy="270" rx="104" ry="142"/>
+              <path d="M184 248C219 224 251 225 274 198C286 184 278 164 301 150C332 141 356 157 378 169C397 180 416 173 445 190C468 210 462 231 482 249"/>
+              <path d="M231 291C260 274 286 281 298 303C308 320 302 342 317 359C326 372 338 386 333 405M362 263C388 252 414 258 443 282C455 300 443 320 425 329C409 337 404 355 392 371"/>
+              <path d="M178 270H462M320 128V412" opacity=".35"/>
+            </g>
           </g>
           <g class="ground-track" clip-path="url(#earth-clip)" aria-hidden="true">
             <path d="M166 307C221 242 263 230 320 271C374 310 414 311 479 231"/>
@@ -72,7 +69,6 @@ description: Mechanical engineering student and aerospace engineering minor focu
             </g>
           </g>
           <g class="orbit-annotations" aria-hidden="true">
-            <path d="M113 154h73l27 32"/><text x="112" y="145">ASCENDING NODE</text>
             <path d="M445 409h78l27-25"/><text x="444" y="428">PREDICTED PATH</text>
             <text x="337" y="145">i 51.64°</text>
           </g>
@@ -87,8 +83,7 @@ description: Mechanical engineering student and aerospace engineering minor focu
 <section class="featured shell section-pad" aria-labelledby="featured-title">
   <div class="section-heading heading-row">
     <div>
-      <p class="eyebrow">Selected missions</p>
-      <h2 id="featured-title">Engineering in motion.</h2>
+      <h2 id="featured-title">Engineering project</h2>
     </div>
     <a class="text-link" href="{{ '/projects/' | relative_url }}">View all projects <span aria-hidden="true">→</span></a>
   </div>
@@ -96,7 +91,6 @@ description: Mechanical engineering student and aerospace engineering minor focu
     <article class="project-card project-card-large">
       <div class="project-visual project-photo">
         <div class="project-photo-media">
-          <img class="project-photo-backdrop" src="{{ '/assets/images/fsae-team.jpg' | relative_url }}" alt="" aria-hidden="true">
           <img class="project-photo-image" src="{{ '/assets/images/fsae-team.jpg' | relative_url }}" alt="Polytechnic University Racing and Engineering team with Formula SAE race car 104">
         </div>
         <p>Formula SAE // Team and vehicle</p>
@@ -111,7 +105,6 @@ description: Mechanical engineering student and aerospace engineering minor focu
     <article class="project-card">
       <div class="project-visual project-photo">
         <div class="project-photo-media">
-          <img class="project-photo-backdrop" src="{{ '/assets/images/battle-bot-team.jpeg' | relative_url }}" alt="" aria-hidden="true">
           <img class="project-photo-image" src="{{ '/assets/images/battle-bot-team.jpeg' | relative_url }}" alt="Battle Bot team in the workshop holding the completed robot">
         </div>
         <p>Combat robotics // Team and build</p>
@@ -128,8 +121,7 @@ description: Mechanical engineering student and aerospace engineering minor focu
 
 <section class="capabilities shell section-pad" aria-labelledby="capabilities-title">
   <div class="section-heading">
-    <p class="eyebrow">Core systems</p>
-    <h2 id="capabilities-title">From concept to validated hardware.</h2>
+    <h2 id="capabilities-title">My engineering approach</h2>
     <p>My work combines digital engineering tools with practical experience in fabrication, diagnostics, operations, and project coordination.</p>
   </div>
   <div class="capability-grid">
@@ -164,7 +156,7 @@ description: Mechanical engineering student and aerospace engineering minor focu
       <p>Minor in Aerospace Engineering · Polytechnic University of Puerto Rico · Expected May 2028</p>
     </div>
     <div class="tool-stack" aria-label="Technical tools">
-      <span>SolidWorks</span><span>ANSYS</span><span>CREO</span><span>MATLAB</span>
+      <span data-tool="solidworks">SolidWorks</span><span data-tool="ansys">ANSYS</span><span data-tool="creo">CREO</span><span data-tool="matlab">MATLAB</span>
     </div>
   </div>
 </section>

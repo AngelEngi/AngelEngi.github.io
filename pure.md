@@ -7,7 +7,6 @@ description: Angel G. Lugo Rodriguez's Formula SAE ergonomics and chassis leader
 
 <section class="page-hero shell project-page-hero">
   <a class="text-link project-back-link" href="{{ '/projects/' | relative_url }}"><span aria-hidden="true">←</span> All projects</a>
-  <p class="eyebrow">Project 01 // Formula SAE</p>
   <h1>PURE Experience</h1>
   <p>Two leadership phases spanning driver ergonomics, chassis development, compliance, integration, procurement, and manufacturing.</p>
 </section>
