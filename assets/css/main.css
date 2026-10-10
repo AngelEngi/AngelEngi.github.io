@@ -227,4 +227,76 @@ nav .nav-contact { padding: .45rem .7rem; border: 1px solid var(--line); color: 
   .placeholder-grid { grid-template-columns: 1fr; gap: 0; }.placeholder-card:nth-child(n) { grid-column: auto; margin-top: 0; min-height: 240px; }
 }
 @media (max-width: 460px) { .console-grid { grid-template-columns: 1fr; }.data-panel, .orbital-panel { border-inline: 0; border-bottom: 1px solid var(--line); }.axes text, .orbit-annotations text { font-size: 8px; } }
+
+/* Readability scale: body copy, metadata, and technical labels stay consistent site-wide. */
+:root {
+  --font-body: clamp(.94rem, .14vw + .9rem, 1rem);
+  --font-meta: clamp(.82rem, .12vw + .78rem, .88rem);
+  --font-label: clamp(.72rem, .1vw + .69rem, .78rem);
+}
+
+.brand strong { font-size: 1.05rem; }
+nav a,
+.button,
+.eyebrow,
+.mission-stats dd,
+.console-header,
+.console-footer,
+.data-panel h2,
+.data-panel dt,
+.orbit-display figcaption,
+.text-link,
+.capability-index,
+.project-visual > p,
+.project-type,
+.project-content a,
+.timeline-date,
+.project-number,
+.project-role,
+.pure-overview-photo figcaption,
+.phase-code,
+.pure-shot figcaption span,
+.battle-schematic-media > span,
+.detail-visual > span,
+.placeholder-card > span,
+.video-play-button strong,
+.site-footer { font-size: var(--font-label); }
+
+.data-panel dd,
+.timeline h3 span,
+.experience-page .timeline h2 span,
+.tool-stack span,
+.tag-list span,
+.pure-shot figcaption { font-size: var(--font-meta); }
+
+.section-heading > p:last-child,
+.hero-lede,
+.capability-grid p,
+.project-content p:not(.project-type),
+.timeline p,
+.education-inner p:last-child,
+.contact > p:not(.eyebrow),
+.page-hero > p:last-child,
+.project-detail-main > p:not(.project-type):not(.project-role),
+.project-outcomes,
+.pure-phase-header > p,
+.placeholder-card p,
+.experience-page .timeline ul { font-size: var(--font-body); line-height: 1.7; }
+
+.project-content h3 { font-size: clamp(1.08rem, 1.2vw, 1.25rem); line-height: 1.35; }
+.timeline-date { font-size: var(--font-meta); font-weight: 600; letter-spacing: .055em; }
+.tool-stack span, .tag-list span { padding: .48rem .68rem; }
+.pure-shot figcaption { line-height: 1.65; }
+
+.battle-bot-phases .pure-video-compact .pure-shot-media {
+  width: min(100%, 26rem);
+  aspect-ratio: 9 / 16;
+  justify-self: center;
+}
+.battle-bot-phases .pure-video-compact figcaption {
+  width: min(100%, 26rem);
+  min-height: 0;
+  justify-self: center;
+}
+
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; }.predicted-path { animation: none; } }
