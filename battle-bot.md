@@ -3,6 +3,7 @@ layout: default
 title: Battle Bot Experience
 permalink: /projects/battle-bot/
 description: Angel G. Lugo Rodriguez's combat robotics design, fabrication, and team leadership experience.
+page_class: project-battle-bot
 ---
 
 <section class="page-hero shell project-page-hero">

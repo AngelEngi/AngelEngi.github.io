@@ -9,7 +9,7 @@
     <link rel="icon" href="{{ '/assets/images/mission-mark.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
-  <body>
+  <body{% if page.page_class %} class="{{ page.page_class }}"{% endif %}>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="space-grid" aria-hidden="true"></div>
 

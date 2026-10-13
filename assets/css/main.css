@@ -15,6 +15,10 @@
 html { scroll-behavior: smooth; }
 body { min-width: 320px; margin: 0; color: var(--ink); background: var(--bg); font-family: "Cascadia Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: clamp(15.5px, .25vw + 14px, 17px); line-height: 1.7; }
 .space-grid { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px); background-size: 40px 40px; }
+.space-grid::before { content: ""; position: absolute; inset: 72px 0 0; background-position: center top; background-repeat: repeat-y; mix-blend-mode: multiply; pointer-events: none; }
+.home-page .space-grid::before { background-image: url("../images/jet-blueprint-watermark.png"); background-size: min(1450px, 96vw) auto; filter: grayscale(1) invert(1) contrast(1.75); opacity: .075; }
+.project-pure .space-grid::before { background-image: url("../images/fsae-chassis-drawing.png"); background-size: min(1100px, 92vw) auto; filter: grayscale(1) contrast(1.15); opacity: .055; }
+.project-battle-bot .space-grid::before { background-image: url("../images/battle-bot-engineering-drawing.png"); background-size: min(1350px, 94vw) auto; filter: grayscale(1) contrast(1.15); opacity: .055; }
 a { color: inherit; }
 img { display: block; max-width: 100%; }
 h1, h2, h3, p { margin-top: 0; }

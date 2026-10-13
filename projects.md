@@ -43,7 +43,7 @@ description: Select an engineering project by Angel G. Lugo Rodriguez and open i
     <article class="project-card">
       <div class="project-visual project-photo">
         <div class="project-photo-media">
-          <img class="project-photo-image project-drawing-image" src="{{ '/assets/images/fsae-chassis-drawing.png' | relative_url }}" alt="Orthographic engineering drawing of a Formula SAE space-frame chassis">
+          <img class="project-photo-image" src="{{ '/assets/images/fsae-team.jpg' | relative_url }}" alt="Polytechnic University Racing and Engineering team with Formula SAE race car 104">
         </div>
         <p>Past project 01 // Formula SAE</p>
       </div>
@@ -57,7 +57,7 @@ description: Select an engineering project by Angel G. Lugo Rodriguez and open i
     <article class="project-card">
       <div class="project-visual project-photo">
         <div class="project-photo-media">
-          <img class="project-photo-image project-drawing-image" src="{{ '/assets/images/battle-bot-engineering-drawing.png' | relative_url }}" alt="Orthographic and isometric engineering drawing of the Battle Bot build">
+          <img class="project-photo-image" src="{{ '/assets/images/battle-bot-team.jpeg' | relative_url }}" alt="Battle Bot team in the workshop holding the completed robot">
         </div>
         <p>Past project 02 // Combat robotics</p>
       </div>

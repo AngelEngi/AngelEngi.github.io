@@ -3,6 +3,7 @@ layout: default
 title: PURE Experience
 permalink: /projects/pure/
 description: Angel G. Lugo Rodriguez's Formula SAE ergonomics and chassis leadership experience with Polytechnic University Racing and Engineering.
+page_class: project-pure
 ---
 
 <section class="page-hero shell project-page-hero">

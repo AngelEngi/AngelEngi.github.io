@@ -2,6 +2,7 @@
 layout: default
 title:
 description: Mechanical engineering student and aerospace engineering minor focused on structural design, simulation, manufacturing, and vehicle systems.
+page_class: home-page
 ---
 
 <section class="hero shell">
@@ -91,9 +92,9 @@ description: Mechanical engineering student and aerospace engineering minor focu
     <article class="project-card project-card-large">
       <div class="project-visual project-photo">
         <div class="project-photo-media">
-          <img class="project-photo-image project-drawing-image" src="{{ '/assets/images/fsae-chassis-drawing.png' | relative_url }}" alt="Orthographic engineering drawing of a Formula SAE space-frame chassis">
+          <img class="project-photo-image" src="{{ '/assets/images/fsae-team.jpg' | relative_url }}" alt="Polytechnic University Racing and Engineering team with Formula SAE race car 104">
         </div>
-        <p>Formula SAE // Chassis engineering drawing</p>
+        <p>Formula SAE // Team and vehicle</p>
       </div>
       <div class="project-content">
         <p class="project-type">Structural design · ANSYS · Manufacturing · SolidWorks · Team leadership</p>
@@ -105,9 +106,9 @@ description: Mechanical engineering student and aerospace engineering minor focu
     <article class="project-card">
       <div class="project-visual project-photo">
         <div class="project-photo-media">
-          <img class="project-photo-image project-drawing-image" src="{{ '/assets/images/battle-bot-engineering-drawing.png' | relative_url }}" alt="Orthographic and isometric engineering drawing of the Battle Bot build">
+          <img class="project-photo-image" src="{{ '/assets/images/battle-bot-team.jpeg' | relative_url }}" alt="Battle Bot team in the workshop holding the completed robot">
         </div>
-        <p>Combat robotics // Build engineering drawing</p>
+        <p>Combat robotics // Team and build</p>
       </div>
       <div class="project-content">
         <p class="project-type">SolidWorks · Team leadership · Fabrication</p>
