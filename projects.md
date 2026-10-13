@@ -7,22 +7,45 @@ description: Select an engineering project by Angel G. Lugo Rodriguez and open i
 
 <section class="page-hero shell">
   <p class="eyebrow">Project hangar</p>
-  <h1>Select a mission.</h1>
-  <p>Choose a project to open its complete engineering record, responsibilities, design process, and supporting evidence.</p>
+  <h1>Current and completed engineering work.</h1>
+  <p>Explore the active design program or open a completed project record to review responsibilities, design decisions, and supporting evidence.</p>
 </section>
 
-<section class="shell section-pad" aria-labelledby="project-selector-title">
+<section class="shell project-era project-era-current" aria-labelledby="current-projects-title">
   <div class="section-heading">
-    <p class="eyebrow">Available projects</p>
-    <h2 id="project-selector-title">Two builds. Two engineering challenges.</h2>
+    <p class="eyebrow">Current projects</p>
+    <h2 id="current-projects-title">Work in active development.</h2>
+  </div>
+  <div class="current-project-grid project-selector-grid">
+    <article class="project-card current-project-card">
+      <div class="project-visual project-photo aero-photo-visual">
+        <div class="project-photo-media">
+          <img class="project-photo-image aero-main-image" src="{{ '/assets/images/aero-design-main.png' | relative_url }}" alt="Aero Design team preparing its competition aircraft on the flight line">
+        </div>
+        <p>Current project // Aero design study</p>
+      </div>
+      <div class="project-content">
+        <p class="project-type">Active development · Research · Analysis</p>
+        <h3>Aero Design Experience</h3>
+        <p>An active aerospace design project. The complete engineering record will grow as objectives, analysis, design decisions, and validation results are documented.</p>
+        <a href="{{ '/projects/aero-design/' | relative_url }}">Open current project <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="shell project-era project-era-past" aria-labelledby="past-projects-title">
+  <div class="section-heading">
+    <p class="eyebrow">Past projects</p>
+    <h2 id="past-projects-title">Completed builds and leadership experience.</h2>
   </div>
   <div class="featured-grid project-selector-grid">
     <article class="project-card">
       <div class="project-visual project-photo">
         <div class="project-photo-media">
-          <img class="project-photo-image" src="{{ '/assets/images/fsae-team.jpg' | relative_url }}" alt="Polytechnic University Racing and Engineering team with Formula SAE race car 104">
+          <img class="project-photo-image project-drawing-image" src="{{ '/assets/images/fsae-chassis-drawing.png' | relative_url }}" alt="Orthographic engineering drawing of a Formula SAE space-frame chassis">
         </div>
-        <p>Project 01 // Formula SAE</p>
+        <p>Past project 01 // Formula SAE</p>
       </div>
       <div class="project-content">
         <p class="project-type">Ergonomics lead · Chassis lead</p>
@@ -34,9 +57,9 @@ description: Select an engineering project by Angel G. Lugo Rodriguez and open i
     <article class="project-card">
       <div class="project-visual project-photo">
         <div class="project-photo-media">
-          <img class="project-photo-image" src="{{ '/assets/images/battle-bot-team.jpeg' | relative_url }}" alt="Battle Bot team in the workshop holding the completed robot">
+          <img class="project-photo-image project-drawing-image" src="{{ '/assets/images/battle-bot-engineering-drawing.png' | relative_url }}" alt="Orthographic and isometric engineering drawing of the Battle Bot build">
         </div>
-        <p>Project 02 // Combat robotics</p>
+        <p>Past project 02 // Combat robotics</p>
       </div>
       <div class="project-content">
         <p class="project-type">Mechanical design · Fabrication · Leadership</p>

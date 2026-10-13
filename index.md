@@ -83,7 +83,7 @@ description: Mechanical engineering student and aerospace engineering minor focu
 <section class="featured shell section-pad" aria-labelledby="featured-title">
   <div class="section-heading heading-row">
     <div>
-      <h2 id="featured-title">Engineering project</h2>
+      <h2 id="featured-title">Engineering projects</h2>
     </div>
     <a class="text-link" href="{{ '/projects/' | relative_url }}">View all projects <span aria-hidden="true">→</span></a>
   </div>
@@ -91,9 +91,9 @@ description: Mechanical engineering student and aerospace engineering minor focu
     <article class="project-card project-card-large">
       <div class="project-visual project-photo">
         <div class="project-photo-media">
-          <img class="project-photo-image" src="{{ '/assets/images/fsae-team.jpg' | relative_url }}" alt="Polytechnic University Racing and Engineering team with Formula SAE race car 104">
+          <img class="project-photo-image project-drawing-image" src="{{ '/assets/images/fsae-chassis-drawing.png' | relative_url }}" alt="Orthographic engineering drawing of a Formula SAE space-frame chassis">
         </div>
-        <p>Formula SAE // Team and vehicle</p>
+        <p>Formula SAE // Chassis engineering drawing</p>
       </div>
       <div class="project-content">
         <p class="project-type">Structural design · ANSYS · Manufacturing · SolidWorks · Team leadership</p>
@@ -105,9 +105,9 @@ description: Mechanical engineering student and aerospace engineering minor focu
     <article class="project-card">
       <div class="project-visual project-photo">
         <div class="project-photo-media">
-          <img class="project-photo-image" src="{{ '/assets/images/battle-bot-team.jpeg' | relative_url }}" alt="Battle Bot team in the workshop holding the completed robot">
+          <img class="project-photo-image project-drawing-image" src="{{ '/assets/images/battle-bot-engineering-drawing.png' | relative_url }}" alt="Orthographic and isometric engineering drawing of the Battle Bot build">
         </div>
-        <p>Combat robotics // Team and build</p>
+        <p>Combat robotics // Build engineering drawing</p>
       </div>
       <div class="project-content">
         <p class="project-type">SolidWorks · Team leadership · Fabrication</p>

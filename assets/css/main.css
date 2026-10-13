@@ -15,7 +15,6 @@
 html { scroll-behavior: smooth; }
 body { min-width: 320px; margin: 0; color: var(--ink); background: var(--bg); font-family: "Cascadia Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: clamp(15.5px, .25vw + 14px, 17px); line-height: 1.7; }
 .space-grid { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px); background-size: 40px 40px; }
-.space-grid::before { content: ""; position: absolute; inset: 72px 0 0; background: url("../images/jet-blueprint-watermark.png") center top / min(1450px, 96vw) auto repeat-y; filter: grayscale(1) invert(1) contrast(1.75); mix-blend-mode: multiply; opacity: .075; }
 a { color: inherit; }
 img { display: block; max-width: 100%; }
 h1, h2, h3, p { margin-top: 0; }
@@ -116,6 +115,37 @@ nav .nav-contact { padding: .45rem .7rem; border: 1px solid var(--line); color: 
 .project-photo-media { position: relative; min-height: 0; overflow: hidden; display: grid; place-items: center; padding: 0; border: 1px solid var(--ink); background: var(--bg); }
 .project-photo-media img { display: block; }
 .project-photo-image { position: relative; z-index: 1; width: 100%; height: auto; min-height: 0; object-fit: contain; object-position: center; }
+.project-drawing-image { aspect-ratio: 16 / 9; height: 100%; object-fit: contain; background: #fff; }
+.aero-photo-visual { aspect-ratio: auto; background: #050505; }
+.aero-photo-visual .project-photo-media { aspect-ratio: 1760 / 774; }
+.aero-main-image { width: 100%; height: 100%; object-fit: contain; object-position: center; }
+.aero-photo-detail { margin: 0; border: 1px solid var(--line); background: #050505; }
+.aero-photo-detail img { display: block; width: 100%; height: auto; }
+.aero-photo-detail figcaption { padding: .75rem 1rem; border-top: 1px solid var(--line); color: var(--muted); font: 700 var(--font-label)/1.35 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.aero-analysis-section { padding-bottom: clamp(4rem, 8vw, 8rem); }
+.aero-analysis-section > .section-heading { max-width: 880px; }
+.aero-analysis-section > .section-heading > p:last-child { max-width: 780px; color: var(--muted); font-size: var(--font-body); line-height: 1.7; }
+.aero-analysis-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+.aero-data-figure { min-width: 0; max-width: 100%; margin: 0; border: 1px solid var(--line); background: #fff; }
+.aero-data-figure a { display: block; max-width: 100%; overflow-x: auto; }
+.aero-data-figure img { display: block; width: 100%; height: auto; min-width: 720px; }
+.aero-data-figure figcaption { padding: .8rem 1rem; border-top: 1px solid var(--line); color: var(--muted); background: var(--bg); font-size: var(--font-label); letter-spacing: .06em; text-transform: uppercase; }
+.aero-analysis-copy h3 { margin-top: 0; font-size: clamp(1.35rem, 2.5vw, 2.1rem); }
+.aero-analysis-copy > p { color: var(--muted); font-size: var(--font-body); line-height: 1.7; }
+.aero-data-points { margin: 2rem 0 0; border-top: 1px solid var(--line); }
+.aero-data-points div { padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.aero-data-points dt { margin-bottom: .35rem; color: var(--ink); font: 700 var(--font-label)/1.35 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.aero-data-points dd { margin: 0; color: var(--muted); font-size: var(--font-small); line-height: 1.6; }
+.aero-analysis-module { padding-bottom: clamp(4rem, 8vw, 8rem); display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.aero-analysis-media-grid { min-width: 0; display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+.aero-analysis-screen { min-width: 0; margin: 0; border: 1px solid var(--line); background: #f3f3f3; }
+.aero-analysis-screen a { display: block; overflow: hidden; }
+.aero-analysis-screen img { display: block; width: 100%; aspect-ratio: 1906 / 1018; object-fit: contain; object-position: center; }
+.aero-analysis-screen figcaption { padding: .8rem 1rem; border-top: 1px solid var(--line); color: var(--muted); background: var(--bg); font-size: var(--font-label); letter-spacing: .06em; text-transform: uppercase; }
+.aero-study-status { margin: 2rem 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.aero-study-status div { padding: 1rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.aero-study-status dt { margin-bottom: .35rem; color: var(--muted); font-size: var(--font-label); letter-spacing: .08em; text-transform: uppercase; }
+.aero-study-status dd { margin: 0; color: var(--ink); font-weight: 700; line-height: 1.4; }
 .project-photo > p { position: static; min-height: 2rem; display: flex; align-items: center; padding: .45rem .8rem; border-top: 1px solid var(--line); background: var(--bg); }
 .axis { position: absolute; background: rgba(8,10,9,.15); }.axis-x { height: 1px; left: 10%; right: 10%; top: 51%; }.axis-y { width: 1px; top: 12%; bottom: 12%; left: 50%; }
 .wireframe-car { position: absolute; left: 18%; right: 18%; top: 27%; bottom: 27%; border: 1px solid var(--ink); transform: skewX(-8deg); clip-path: polygon(0 60%, 15% 24%, 65% 6%, 88% 34%, 100% 67%, 86% 88%, 16% 90%); }
@@ -151,6 +181,21 @@ nav .nav-contact { padding: .45rem .7rem; border: 1px solid var(--line); color: 
 .project-back-link { display: inline-block; margin-bottom: 2.5rem; }
 .project-selector-grid .project-card { min-height: 100%; }
 .project-selector-grid .project-content { padding-bottom: 2rem; }
+.project-era { padding-block: clamp(3.5rem, 6vw, 6rem); }
+.project-era + .project-era { border-top: 1px solid var(--line); }
+.project-era-current { padding-top: 1rem; }
+.current-project-grid { display: grid; grid-template-columns: minmax(0, 1fr); }
+.current-project-card { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr); gap: clamp(2rem, 4vw, 4rem); align-items: stretch; }
+.current-project-card .project-content { padding-block: 2rem; align-self: center; }
+.aero-project-visual { position: relative; min-height: 320px; overflow: hidden; border: 1px solid var(--ink); color: var(--ink); background: var(--bg); }
+.aero-project-visual svg { width: 100%; height: 100%; display: block; }
+.aero-project-visual > p { position: absolute; left: .8rem; bottom: .5rem; margin: 0; color: var(--muted); font-size: var(--font-label); letter-spacing: .08em; text-transform: uppercase; }
+.aero-grid-lines { fill: none; stroke: currentColor; stroke-width: .65; opacity: .08; }
+.aero-drawing-lines { fill: none; stroke: currentColor; stroke-width: 1.4; vector-effect: non-scaling-stroke; }
+.aero-drawing-text { fill: currentColor; font: 12px "Cascadia Mono", Consolas, monospace; letter-spacing: 1px; }
+.aero-current-project { padding-bottom: clamp(4rem, 7vw, 7rem); display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.aero-project-visual-detail { min-height: 440px; }
+.aero-current-copy p:not(.eyebrow) { color: var(--muted); font-size: var(--font-body); line-height: 1.7; }
 .project-list { padding-top: 2rem; }
 .project-detail { scroll-margin-top: 2rem; padding: 2.5rem 0 4.5rem; display: grid; grid-template-columns: 60px minmax(0, 1.15fr) minmax(280px, .85fr); gap: 2rem; border-top: 1px solid var(--line); }
 .project-number { color: var(--signal); font-size: .72rem; }.project-detail-main h2 { font-size: clamp(1.7rem, 3vw, 3rem); }.project-role { color: var(--ink); font-size: .72rem; }
@@ -232,6 +277,7 @@ nav .nav-contact { padding: .45rem .7rem; border: 1px solid var(--line); color: 
   .education-inner { padding-block: 4rem; }.tool-stack { justify-content: flex-start; }
   .site-footer { min-height: 170px; justify-content: center; gap: .5rem; }.site-footer p { padding-left: 2rem; }
   .project-detail { grid-template-columns: 1fr; }.detail-visual { grid-column: 1; min-height: 300px; }.project-number { margin-bottom: -1rem; }
+  .current-project-card, .aero-current-project, .aero-analysis-grid, .aero-analysis-module { grid-template-columns: 1fr; }.current-project-card .project-content { padding-top: 0; }.aero-project-visual, .aero-project-visual-detail { min-height: 280px; }
   .pure-phases { grid-column: 1; margin-top: 1rem; }.pure-phase-header { grid-template-columns: 1fr; gap: 1rem; }.pure-gallery { grid-template-columns: 1fr; gap: 2.5rem; }.pure-shot-feature { grid-column: 1; }.pure-shot figcaption { min-height: 0; }
   .placeholder-grid { grid-template-columns: 1fr; gap: 0; }.placeholder-card:nth-child(n) { grid-column: auto; margin-top: 0; min-height: 240px; }
 }
